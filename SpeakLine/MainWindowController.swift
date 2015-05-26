@@ -71,4 +71,9 @@ class MainWindowController: NSWindowController, NSSpeechSynthesizerDelegate, NSW
         return !isStarted
     }
     
+    func windowWillResize(sender: NSWindow, toSize frameSize: NSSize) -> NSSize {
+        let mySize = NSSize(width: frameSize.width, height: (frameSize.height * 2))
+        return mySize
+    }
+    
 }
