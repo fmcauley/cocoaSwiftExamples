@@ -11,6 +11,10 @@
 		9BC7870A1B14A93E00E8AB9F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BC787091B14A93E00E8AB9F /* Images.xcassets */; };
 		9BC7870D1B14A93E00E8AB9F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BC7870B1B14A93E00E8AB9F /* MainMenu.xib */; };
 		9BC787191B14A93E00E8AB9F /* SpeakLineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC787181B14A93E00E8AB9F /* SpeakLineTests.swift */; };
+		9BC787241B14A9BC00E8AB9F /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC787221B14A9BC00E8AB9F /* MainWindowController.swift */; };
+		9BC787251B14A9BC00E8AB9F /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC787221B14A9BC00E8AB9F /* MainWindowController.swift */; };
+		9BC787261B14A9BC00E8AB9F /* MainWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BC787231B14A9BC00E8AB9F /* MainWindowController.xib */; };
+		9BC787271B14A9BC00E8AB9F /* MainWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BC787231B14A9BC00E8AB9F /* MainWindowController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +36,8 @@
 		9BC787121B14A93E00E8AB9F /* SpeakLineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpeakLineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BC787171B14A93E00E8AB9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9BC787181B14A93E00E8AB9F /* SpeakLineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakLineTests.swift; sourceTree = "<group>"; };
+		9BC787221B14A9BC00E8AB9F /* MainWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
+		9BC787231B14A9BC00E8AB9F /* MainWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindowController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +83,8 @@
 				9BC787091B14A93E00E8AB9F /* Images.xcassets */,
 				9BC7870B1B14A93E00E8AB9F /* MainMenu.xib */,
 				9BC787051B14A93E00E8AB9F /* Supporting Files */,
+				9BC787221B14A9BC00E8AB9F /* MainWindowController.swift */,
+				9BC787231B14A9BC00E8AB9F /* MainWindowController.xib */,
 			);
 			path = SpeakLine;
 			sourceTree = "<group>";
@@ -187,6 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BC7870A1B14A93E00E8AB9F /* Images.xcassets in Resources */,
+				9BC787261B14A9BC00E8AB9F /* MainWindowController.xib in Resources */,
 				9BC7870D1B14A93E00E8AB9F /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -195,6 +204,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BC787271B14A9BC00E8AB9F /* MainWindowController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BC787241B14A9BC00E8AB9F /* MainWindowController.swift in Sources */,
 				9BC787081B14A93E00E8AB9F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BC787251B14A9BC00E8AB9F /* MainWindowController.swift in Sources */,
 				9BC787191B14A93E00E8AB9F /* SpeakLineTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
