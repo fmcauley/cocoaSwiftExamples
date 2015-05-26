@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class MainWindowController: NSWindowController {
+class MainWindowController: NSWindowController, NSSpeechSynthesizerDelegate, NSWindowDelegate {
     
     @IBOutlet weak var textField: NSTextField!
     @IBOutlet weak var speakButton: NSButton!
@@ -29,8 +29,14 @@ class MainWindowController: NSWindowController {
     override func windowDidLoad() {
         super.windowDidLoad()
         updateButtons()
+        speechSynth.delegate = self
 
         // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
+    }
+    
+    // MARK: - NSSpeechSynthesizserDelegate
+    func speechSynthesizer(sender: NSSpeechSynthesizer, didFinishSpeaking finishedSpeaking: Bool) {
+        isStarted = false
     }
     
     // MARK: - Private Methods
@@ -58,7 +64,11 @@ class MainWindowController: NSWindowController {
     
     @IBAction func stopIt(sender: NSButton){
         speechSynth.stopSpeaking()
-        isStarted = false
+    }
+    
+    // MARK: - Window Delegate
+    func windowShouldClose(sender: AnyObject) -> Bool {
+        return !isStarted
     }
     
 }
